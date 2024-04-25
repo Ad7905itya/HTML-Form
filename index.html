@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading-1">
+            <h2>Sign Up Form</h2>
+        </div>
+        <form action="/action.php" method="post">
+
+            <!-- Name Section -->
+            <div class="input-group">
+                <label for="fname"><strong>Name</strong>
+                    <input type="text" name="fname" id="fname" title="Enter Your Name" maxlength="22"
+                        placeholder="Full Name" required>
+                </label>
+            </div>
+
+            <!-- username section -->
+            <div class="input-group">
+                <label for="user"><strong>Username</strong>
+                    <input type="text" name="username" id="user" title="Enter UserName" maxlength="12"
+                        placeholder="UserName" required>
+                </label>
+            </div>
+
+            <!-- users enter phone numbers -->
+            <div class="input-group">
+                <label for="phone"><strong>Phone</strong>
+                    <span><i class="fa-solid fa-phone"></i>
+                        <input type="text" name="phone" maxlength="10" id="phone" title="Enter Your Phone Number"
+                            placeholder="Phone Number" inputmode="numeric" required></span>
+                </label>
+            </div>
+
+            <!-- users enter email -->
+            <div class="input-group">
+                <label for="email"><strong>Email</strong>
+                    <span><i class="fa-regular fa-envelope"></i><input type="email" name="email" id="email"
+                            title="Enter Your Email" placeholder="(optional)"></span>
+
+                </label>
+            </div>
+
+            <!-- users password -->
+            <div class="input-group">
+                <label for="pass"><strong>Password</strong>
+                    <input type="password" name="pass" id="pass" title="The Password must be at least 8 charactor long."
+                        placeholder="Password" required>
+                </label>
+            </div>
+
+            <!-- users conform password -->
+            <div class="input-group">
+                <label for="cpass"><strong>Conform Password</strong>
+                    <input type="password" name="cpass" id="cpass"
+                        title="The Password must be at least 8 charactor long." placeholder="Conform Password" required>
+                </label>
+            </div>
+
+            <!-- Submit users data -->
+            <div class="submit">
+                <input type="submit" value="Sign-Up" title="Submit your Data">
+            </div>
+
+            <div class="log-in">
+                <p>Already have an Account?<a href="Login.html">LOGIN</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading-1">
+            <h2>Log in Form</h2>
+        </div>
+        <form action="/action.php" method="post">
+            <!-- username section -->
+            <div class="input-group">
+                <label for="user"><strong>Username</strong>
+                    <input type="text" name="username" id="user" title="Enter UserName" maxlength="12"
+                        placeholder="UserName" required>
+                </label>
+            </div>
+
+            <!-- users password -->
+            <div class="input-group">
+                <label for="pass"><strong>Password</strong>
+                    <input type="password" name="pass" id="pass" title="The Password must be at least 8 charactor long."
+                        placeholder="Password" required>
+                </label>
+            </div>
+
+            <!-- Submit users data -->
+            <div class="submit">
+                <input type="submit" value="Sign-Up" title="Submit your Data">
+            </div>
+
+            <div class="log-in">
+                <p>Create a new Account?<a href="index.html">SIGN IN</a></p>
+            </div>
+        </form>
+</body>
+</html>
